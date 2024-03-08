@@ -1,5 +1,13 @@
 # Release Notes
 
+## 16 - 2024-03-08
+
+### What's Changed
+
+* Add a minus method for the Example class by [@cable8mm](https://github.com/cable8mm) in https://github.com/cable8mm/github/pull/3
+
+**Full Changelog**: https://github.com/cable8mm/github/compare/v0.0.15...16
+
 ## v0.0.15 - 2024-03-08
 
 ### What's Changed
