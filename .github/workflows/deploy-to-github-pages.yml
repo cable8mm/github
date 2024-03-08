@@ -1,11 +1,11 @@
-name: Deploy API Doc to Gihub Pages
+name: deploy-to-github-pages
 
 on:
   release:
     types: [released]
 
 jobs:
-  deploy-api-doc:
+  publish-pages:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
