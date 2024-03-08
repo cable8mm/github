@@ -12,4 +12,9 @@ class Example {
     {
         return $x-$y;
     }
+
+    public function times(int $x, int $y): int
+    {
+        return $x*$y;
+    }
 }

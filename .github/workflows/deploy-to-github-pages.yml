@@ -4,23 +4,10 @@ on:
   release:
     types: [released]
 
+permissions: {}
+
 jobs:
   publish-pages:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Create a config file
-        # Scan all the src folder
-        run: echo "<?php return new Doctum\Doctum('src/');" > doctum-config.php
-      - name: lint doctum docs
-        uses: sudo-bot/action-doctum@v5
-        with:
-          config-file: doctum-config.php
-          method: "update"
-          # (optional) defaults to '--output-format=github --no-ansi --no-progress -v'
-          cli-args: "--output-format=github --no-ansi --no-progress -v"
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+    permissions:
+      contents: write
+    uses: cable8mm/.github/.github/workflows/deploy-to-github-pages.yml@main
