@@ -1,5 +1,14 @@
 # Release Notes
 
+## 17 - 2024-03-08
+
+### What's Changed
+
+* Update the action name by [@cable8mm](https://github.com/cable8mm) in https://github.com/cable8mm/github/pull/4
+* Action from .github repository by [@cable8mm](https://github.com/cable8mm) in https://github.com/cable8mm/github/pull/5
+
+**Full Changelog**: https://github.com/cable8mm/github/compare/16...17
+
 ## 16 - 2024-03-08
 
 ### What's Changed
