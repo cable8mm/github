@@ -1,5 +1,17 @@
 # Release Notes
 
+## v0.0.15 - 2024-03-08
+
+### What's Changed
+
+* Test a Doctum deployment to GitHub Pages by [@cable8mm](https://github.com/cable8mm) in https://github.com/cable8mm/github/pull/2
+
+### New Contributors
+
+* [@cable8mm](https://github.com/cable8mm) made their first contribution in https://github.com/cable8mm/github/pull/2
+
+**Full Changelog**: https://github.com/cable8mm/github/compare/v0.0.10...v0.0.15
+
 ## v0.0.14 - 2024-02-06
 
 **Full Changelog**: https://github.com/cable8mm/github/compare/v0.0.4...v0.0.14
