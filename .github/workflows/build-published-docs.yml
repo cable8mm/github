@@ -1,10 +1,11 @@
-name: Lint phpdocs
+name: Deploy API Doc to Gihub Pages
 
-on: [push]
+on:
+  release:
+    types: [released]
 
 jobs:
-  lint-phpdoc:
-    name: lint-phpdoc
+  deploy-api-doc:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
