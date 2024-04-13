@@ -2,3 +2,4 @@
 /build/*
 /cache/*
 /doctum.php
+/composer.lock
