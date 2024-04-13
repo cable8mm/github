@@ -2,19 +2,20 @@
 
 namespace Cable8mm\Github;
 
-class Example {
+class Example
+{
     public function plus(int $x, int $y): int
     {
-        return $x+$y;
+        return $x + $y;
     }
 
     public function minus(int $x, int $y): int
     {
-        return $x-$y;
+        return $x - $y;
     }
 
     public function times(int $x, int $y): int
     {
-        return $x*$y;
+        return $x * $y;
     }
 }
