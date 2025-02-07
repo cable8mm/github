@@ -1,5 +1,13 @@
 # Release Notes
 
+## v17.0.1 - 2025-02-07
+
+### What's Changed
+
+* Add `Example` class comments by [@cable8mm](https://github.com/cable8mm) in https://github.com/cable8mm/github/pull/7
+
+**Full Changelog**: https://github.com/cable8mm/github/compare/17...v17.0.1
+
 ## 17 - 2024-03-08
 
 ### What's Changed
