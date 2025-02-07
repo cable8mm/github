@@ -15,4 +15,19 @@ jobs:
   publish-pages:
     permissions:
       contents: write
-    uses: cable8mm/.github/.github/workflows/deploy-to-github-pages.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create a config file
+        # Scan all the src folder
+        run: echo "<?php return new Doctum\Doctum('src/');" > doctum-config.php
+      - name: lint doctum docs
+        uses: sudo-bot/action-doctum@v5
+        with:
+          config-file: doctum-config.php
+          method: "update"
+          # (optional) defaults to '--output-format=github --no-ansi --no-progress -v'
+          cli-args: "--output-format=github --no-ansi --no-progress -v"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
