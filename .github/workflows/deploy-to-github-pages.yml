@@ -23,14 +23,14 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy:
+  lint-phpdoc:
+    name: lint-phpdoc
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
       - name: Create a config file
         # Scan all the src folder
         run: echo "<?php return new Doctum\Doctum('src/');" > doctum-config.php
@@ -38,6 +38,6 @@ jobs:
         uses: sudo-bot/action-doctum@v5
         with:
           config-file: doctum-config.php
-          method: "update"
+          method: "parse"
           # (optional) defaults to '--output-format=github --no-ansi --no-progress -v'
           cli-args: "--output-format=github --no-ansi --no-progress -v"
