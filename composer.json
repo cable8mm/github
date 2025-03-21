@@ -12,7 +12,8 @@
         }
     ],
     "scripts": {
-        "apidoc": "doctum.phar update doctum.php --output-format=github --no-ansi --no-progress"
+        "apidoc": "doctum.phar update doctum.php --output-format=github --no-ansi --no-progress",
+        "opendoc": "open build/index.html"
     },
     "require-dev": {
         "laravel/pint": "^1.15"
